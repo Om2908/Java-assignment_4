@@ -1,0 +1,18 @@
+Class om { 
+ public static void main(String[] args) {
+ try { 
+ int data = 50 / 0; // May throw Exception
+ } catch (ArithmeticException p)
+ {
+ System.out.println(p);
+ } 
+ try { 
+ int arr[] = { 1, 4, 6 , 8};
+ System.out.println(arr[10]); // may throw exception
+ } 
+ // handling the array exception
+ catch (ArrayIndexOutOfBoundsException p) {
+ System.out.println(p);
+ } 
+ } 
+}
